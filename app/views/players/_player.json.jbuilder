@@ -1,0 +1,2 @@
+json.extract! player, :id, :firstname, :lastname, :nickname, :email, :phone, :gender, :yes_hash, :no_hash, :password_digest, :role, :highround, :lowround, :numnoshows, :goal2, :goal7, :goal20, :averageround, :hdcp2, :hdcp7, :hdcp20, :seasonprizemoney, :lifetimeprizemoney, :duesamt, :duespaid, :reminder, :active, :hashdcp, :cangetemail, :created_at, :updated_at
+json.url player_url(player, format: :json)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180730005720) do
+ActiveRecord::Schema.define(version: 20180804013323) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -30,6 +30,39 @@ ActiveRecord::Schema.define(version: 20180730005720) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "nickname"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "gender"
+    t.string   "yes_hash"
+    t.string   "no_hash"
+    t.string   "password_digest"
+    t.string   "role"
+    t.integer  "highround"
+    t.integer  "lowround"
+    t.integer  "numnoshows"
+    t.integer  "goal2"
+    t.integer  "goal7"
+    t.integer  "goal20"
+    t.decimal  "averageround"
+    t.decimal  "hdcp2"
+    t.decimal  "hdcp7"
+    t.decimal  "hdcp20"
+    t.decimal  "seasonprizemoney"
+    t.decimal  "lifetimeprizemoney"
+    t.decimal  "duesamt"
+    t.boolean  "duespaid"
+    t.boolean  "reminder"
+    t.boolean  "active"
+    t.boolean  "hashdcp"
+    t.boolean  "cangetemail"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
 end
